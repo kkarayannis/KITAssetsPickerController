@@ -105,6 +105,7 @@ NSString * const KITAssetsGridViewFooterIdentifier = @"KITAssetsGridViewFooterId
     [super viewWillAppear:animated];
     [self setupAssets];
     [self setupButtons];
+    [self updateTitle:self.picker.selectedAssets];
 }
 
 - (void)viewDidAppear:(BOOL)animated
