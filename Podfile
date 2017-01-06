@@ -1,5 +1,9 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
 
-source 'https://github.com/CocoaPods/Specs.git'
+def shared_pods
+    pod 'KITAssetsPickerController', :path => '.'
+end
 
-pod 'KITAssetsPickerController', :path => '.'
+target 'KITAssetsPickerDemo' do
+    shared_pods
+end

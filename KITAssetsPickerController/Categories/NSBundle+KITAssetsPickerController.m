@@ -31,13 +31,7 @@
 
 + (NSBundle *)KITAssetsPickerBundle
 {
-    return [NSBundle bundleWithPath:[NSBundle KITAssetsPickerBundlePath]];
-}
-
-+ (NSString *)KITAssetsPickerBundlePath
-{
-    return [[NSBundle bundleForClass:[KITAssetsPickerController class]]
-            pathForResource:@"KITAssetsPickerController" ofType:@"bundle"];
+    return [NSBundle bundleForClass:NSClassFromString(@"AppDelegate")];
 }
 
 @end
